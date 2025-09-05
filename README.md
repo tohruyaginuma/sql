@@ -21,7 +21,7 @@ This starts PostgreSQL in the background.
 Connect to PostgreSQL with:
 
 ```bash
-docker exec -it local-postgres psql -U postgres -d app_db
+docker exec -it local-postgres psql -U postgres -d shop
 ```
 
 - `-U postgres` → username
