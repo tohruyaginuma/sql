@@ -85,3 +85,8 @@ INSERT INTO ShohinBunrui(shohin_bunrui, sum_hanbai_tanka, sum_shiire_tanka)
 SELECT shohin_bunrui, SUM(hanbai_tanka), SUM(shiire_tanka)
 FROM ShohinIns
 GROUP BY shohin_bunrui;
+
+UPDATE ShohinSaeki
+SET hanbai_tanka = 3000,
+    saeki = hanbai_tanka - shiire_tanka
+WHERE shohin_mei = 'カッターシャツ';
